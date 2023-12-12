@@ -1,0 +1,33 @@
+class Solution {                          //7 dec 2023
+    public int maxSubArray(int[] nums) {
+        int sum=0;
+        int max = Integer.MIN_VALUE;
+        for(int i=0;i<nums.length;i++)
+        {
+            max=Math.max(max,nums[i]);
+        }
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i]+sum<0)
+            {
+                sum=0;
+                continue;
+            }
+            else
+            {
+                sum=sum+nums[i];
+                max=Math.max(sum,max);
+            }
+        }return max;
+        // long maxi = arr[0]; long sum=0;  // other approach
+        // for(int i=0;i<n;i++){
+        //     sum +=arr[i];
+        //     maxi = Math.max(sum,maxi);
+        //     if(sum<0){
+        //      sum = 0;
+        //     }
+        // }
+        // return maxi;
+        
+    }
+}
