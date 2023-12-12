@@ -1,0 +1,13 @@
+
+class Reverse
+{
+    
+    public static String reverseWord(String str)
+    {
+    
+        StringBuilder s=new StringBuilder(str);
+        String reverseString = s.reverse().toString();
+        return reverseString;
+    }
+   
+}
