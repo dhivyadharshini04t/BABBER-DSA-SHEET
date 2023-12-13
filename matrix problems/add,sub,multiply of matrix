@@ -1,4 +1,4 @@
-// Addition and subtraction of matrix
+// Addition,subtraction and multiplication of matrix
 import java.util.*;
 class Main 
 {
@@ -30,7 +30,7 @@ class Main
       {
           for(int j=0;j<col;j++)
           {
-              tot[i][j]=arr[i][j]+arr1[i][j];    //if it is negative put the minus symbol and get the answer
+              tot[i][j]=arr[i][j]+arr1[i][j];    //if it is negative put the (-) symbol and get the answer and // if it is multiply put (*)symbol and get the answer .
               System.out.print(tot[i][j]+" ");
       }
       System.out.println();      //this line print the nextline after printing every row 
