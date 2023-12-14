@@ -1,0 +1,36 @@
+// FREQUENCY OF MATRIX OF ODD AND EVEN ELEMENTS
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int row=sc.nextInt();
+        int col=sc.nextInt();
+        int[][] arr= new int[row][col];
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<col;j++)
+            {
+                arr[i][j]=sc.nextInt();
+            }
+        }
+     int counteve=0;
+     int countodd=0;
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<col;j++) 
+            {
+                if(arr[i][j]%2==0)
+                {
+                    counteve++;
+                }
+                else{
+                    countodd++;
+                }
+            }
+        }
+                    System.out.println("eve"+counteve);
+                    System.out.println("odd"+countodd);
+     }
+}
