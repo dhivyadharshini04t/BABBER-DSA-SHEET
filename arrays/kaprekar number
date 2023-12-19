@@ -1,0 +1,25 @@
+//kaprekar number        // 9 =>9*9 =>81=>8+1=9    Input==output
+import java.util.*;
+class main {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextInt();
+        long m = (long)n*n;
+        String str = String.valueOf(m);
+        int l = str.length();
+        for(int i=1;i<l;i++)
+        {
+            int left = Integer.parseInt(str.substring(0,i));
+            int right=Integer.parseInt(str.substring(i));
+            
+            if(left+right==n)
+            {
+                System.out.print(n+"is a kaprekar");
+            }
+            else{
+                System.out.print("not a kaprekar");
+            }
+        }
+    }
+}
