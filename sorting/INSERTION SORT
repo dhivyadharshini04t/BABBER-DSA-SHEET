@@ -1,0 +1,37 @@
+//INSERTION SORT
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int i=1;i<n;i++)
+        {
+            int key=arr[i];           // 4 3 2 10 12 1 5 6  now 3 is the key
+            int j = i-1;            // j = 1-1=0   now 4 is the j
+            
+            while(j>=0 && arr[j]>key)
+            {
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j+1]=key;               
+        }
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+
+INPUT :
+8
+4 3 2 10 12 1 5 6
+OUTPUT:
+1 2 3 4 5 6 10 12 
