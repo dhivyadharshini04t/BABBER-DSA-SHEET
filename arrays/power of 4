@@ -13,7 +13,7 @@ class Main {
         {
         System.out.print(true);
         }
-        if(Math.pow(2,30)==0 &&(n%10==4)||(n%10==6))   //here only 2^30 = 1073741824 exists above this it move to negative number and ending with 4 and 6 is always power of 4(true).
+        if(Math.pow(2,30)%n==0 &&(n%10==4)||(n%10==6))   //here only 2^30 = 1073741824 exists above this it move to negative number and ending with 4 and 6 is always power of 4(true).
         {
         System.out.print(true);
         return ;
