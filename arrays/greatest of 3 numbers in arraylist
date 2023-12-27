@@ -1,0 +1,17 @@
+//greatest of three numbers in arraylist
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int l = sc.nextInt();
+        ArrayList<Integer> x = new ArrayList<>();
+        x.add(n);
+        x.add(m);
+        x.add(l);                         
+        System.out.print(Collections.max(x)); //input 1 2 3 output 3
+    }
+}
