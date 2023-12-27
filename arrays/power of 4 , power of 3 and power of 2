@@ -1,0 +1,94 @@
+//power of 4
+import java.util.*;
+class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        if(n<=0)
+        {
+        System.out.print(false);
+        }
+        if(n==1)
+        {
+        System.out.print(true);
+        }
+        if(Math.pow(2,30)%n==0 &&(n%10==4)||(n%10==6))   //here only 2^30 = 1073741824 exists above this it move to negative number and ending with 4 and 6 is always power of 4(true).
+        {
+        System.out.print(true);
+        return ;
+        }
+        System.out.print(false);
+    }
+}
+4,16,64,256,......    
+input 16 output true
+input 2 output false
+input 13 output false
+input 256 output true
+
+
+
+//power of 3
+import java.util.*;
+class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        if(n<1)
+        {
+        System.out.print(false);
+        }
+        if(n==1)
+        {
+        System.out.print(true);
+        }
+        if(Math.pow(3,19)%n==0)   //here only 3^19 = 1162261467 exists above this it move to negative number 
+        {
+        System.out.print(true);
+        return ;
+        }
+        System.out.print(false);
+    }
+}
+3,9,27,81,.....
+input 3 true
+input 12 false
+input 81 true
+
+
+//power of 2
+import java.util.*;
+class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+       if(n==0)
+       {
+           System.out.print(false);
+       }
+       while(n%2==0)
+       {
+           n=n/2;
+       }                         //it is while loop it continuous until it is divided by 2 then n==1 true or false
+        if(n==1)
+        {
+        System.out.print(true);
+        }
+        else
+        {
+        System.out.print(false);
+        }
+    }
+}
+2,4,8,16,.......
+input 10 false
+input 2 true 
+input 8 true
+input 12 false
+
+
+In above all the powers we can or cant include the 1 because n==1 is true that condition is given above 3 problems also so it is our wish most probably power of 1 with every number be consistent.
+
+
