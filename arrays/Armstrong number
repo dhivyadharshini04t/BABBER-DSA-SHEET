@@ -1,0 +1,26 @@
+//Armstrong number
+import java.util.*;
+class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int originalN = n;     //important line to initialize
+        int res = 0;
+        int rem;
+
+        while (n != 0) {
+            rem = n % 10;
+            res = res + (int) Math.pow(rem, 3);
+            n = n / 10;
+        }
+
+        if (res == originalN) {
+            System.out.print("Armstrong number");
+        } else {
+            System.out.print("Not an Armstrong number");
+        }
+    }
+}
+// The key point is that the value of n is modified inside the while loop as it iterates through the digits of the number. 
+// After the loop, n becomes 0, so using originalN for the comparison ensures that you are checking whether the original number is an Armstrong number or not.
+// If you used n in the comparison, it would always be false because n is 0 at that point.
