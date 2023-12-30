@@ -1,0 +1,39 @@
+//find first and last occurence of the array
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int k = sc.nextInt();
+        int first=0;
+        int last=0;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]==k)
+            {
+                first=i;
+            }
+        }
+        for(int i=0;i<=0;i++)
+        {
+            if(arr[i]==k)
+            {
+                last=i;
+               
+            }
+        }System.out.print(last+" "+first);
+    }
+}
+
+
+input 5
+1 2 2 2 3
+2
+output 0 2
