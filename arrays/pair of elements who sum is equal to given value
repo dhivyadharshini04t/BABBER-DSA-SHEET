@@ -1,0 +1,26 @@
+//pair of elements who sum is equal to the given value 
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int k= sc.nextInt();
+        int n = sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]+arr[j]==k)
+                {
+                    System.out.println(arr[i]+" +"+arr[j]+" ="+k);
+                }
+            }
+        }
+    }
+}
