@@ -1,0 +1,29 @@
+// You are using Java
+//find vowels and print and consonants find and print as reverse
+import java.util.*;
+class  main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String s=sc.nextLine();
+        int n = s.length();
+        String v="";
+        String c="";
+        for(int i=0;i<n;i++)
+        {
+            char ch = s.charAt(i);
+            if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='o'||s.charAt(i)=='i'||s.charAt(i)=='u'||
+            s.charAt(i)=='A'||s.charAt(i)=='E'||s.charAt(i)=='I'||s.charAt(i)=='O'||s.charAt(i)=='U')
+            {
+                v=v+ch;
+            }
+            else{
+                c=ch+c;
+            }
+        }System.out.print(v+""+c);
+    }
+}
+
+//SkillRack
+//output : iakcRllkS
