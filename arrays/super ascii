@@ -1,0 +1,33 @@
+//Super Ascii
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+       String s = sc.nextLine();
+     int arr[]=new int[26];
+     for(char c:s.toCharArray())
+     {
+         arr[c-'a']++;
+     }
+     int flag=0;
+     for(char c:s.toCharArray())
+     {
+         
+         if(arr[c-'a']!=(c-'a')+1)
+         {
+             flag=1;
+             break;
+         }
+     }
+         if(flag==1)
+         {
+             System.out.print("no");
+         }
+         else{
+             System.out.print("yes");
+         }
+    }
+}//String bba
+//yes
