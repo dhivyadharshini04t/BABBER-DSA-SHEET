@@ -1,0 +1,67 @@
+// You are using Java
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=1;i<=n;i++)//checking the number of rows
+        {
+            for(int j=0;j<n-i;j++)//For the spaces
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<i*2-1;j++)//For the stars printing
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+// output 
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+
+
+
+
+this same as reverse means that is 
+*********
+ *******
+  *****
+   ***
+    *
+
+// You are using Java
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=n;i>=1;i--)//checking the number of rows          // just change this for loop only to reverse the first pyramid pattern
+        {
+            for(int j=0;j<n-i;j++)//For the spaces
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<i*2-1;j++)//For the stars printing
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+// output 
+// *********
+//  *******
+//   *****
+//   ***
+//    *
