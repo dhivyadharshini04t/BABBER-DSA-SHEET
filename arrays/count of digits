@@ -1,0 +1,15 @@
+//count of digits
+//input 111    34
+//output 3      2
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String str = Integer.toString(n);
+        int c = str.length();
+        System.out.print(c);
+    }
+}
