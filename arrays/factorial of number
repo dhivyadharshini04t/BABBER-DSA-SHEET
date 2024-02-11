@@ -1,0 +1,47 @@
+//factorial method 1 (recursive)
+import java.util.*;
+class main 
+{
+    public static int Factorial(int n)
+    {
+        
+       if(n==0)
+       {
+           return 1;
+       }
+       return n*Factorial(n-1);
+    }
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int l = Factorial(n);
+        System.out.print(l);
+}
+}
+
+// input --> 5
+//output -->120
+
+
+
+
+//factorial method 2  (iterative)
+import java.util.*;
+class main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int ans = 1;
+        for(int i=1;i<=n;i++)
+        {
+            ans = ans*i;
+        }
+        System.out.print(ans);
+}
+}
+
+// input --> 5
+//output -->120
