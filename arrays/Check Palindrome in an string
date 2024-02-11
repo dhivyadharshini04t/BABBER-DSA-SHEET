@@ -7,9 +7,9 @@ class main {
         String s = sc.nextLine();
         int n = s.length();
         boolean isPalindrome=true;
-        for(int i=0;i<n/2;i++)
+        for(int i=0;i<n/2;i++)    //the length is be divided into half and the middle character is not checken when it is an odd count
         {
-            if(s.charAt(i)!=s.charAt(n-i-1))
+            if(s.charAt(i)!=s.charAt(n-i-1))     //check first with last and second with last second and goes on
             {
                 isPalindrome=false;
                 break;
