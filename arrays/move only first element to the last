@@ -1,0 +1,28 @@
+//rotate the first element to the last 
+import java.util.*;
+class main 
+    {
+        public static void main(String args[])
+        {
+            Scanner sc = new Scanner(System.in);
+            int  n = sc.nextInt();
+            int arr[]=new int[n];
+            for(int i=0;i<n;i++)
+            {
+                arr[i]=sc.nextInt();
+            }
+         int k =arr[0];
+         if(arr.length>1)
+         {
+             for(int i=0;i<n-1;i++)
+                {
+                    arr[i]=arr[i+1];
+                }
+                 arr[arr.length-1]=k;
+             }
+         System.out.print(Arrays.toString(arr));
+     }
+  }
+    
+// input 1 2 3 4 5
+// output 2 3 4 5 1
