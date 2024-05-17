@@ -1,0 +1,24 @@
+//last index of the given character
+import java.util.*;
+class  main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        char ch = sc.next().charAt(0);
+        int last=-1;
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)==ch)
+            {
+                last=i;
+            }
+        }
+        System.out.print(last);
+    }
+}
+
+// Hello programmer 
+// r 
+// output = last index of 'r' is 15
